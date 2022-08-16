@@ -1,0 +1,16 @@
+.bosses__section_title {
+  width: 95%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0.4rem auto;
+  padding: 0.8rem;
+  border-bottom: solid 0.2rem black;
+}
+
+.bosses {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

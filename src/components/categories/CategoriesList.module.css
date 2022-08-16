@@ -1,0 +1,12 @@
+.categories_list__element {
+  background-color: azure;
+  list-style: none;
+  flex: auto;
+}
+
+.categoriesList__new_list {
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}

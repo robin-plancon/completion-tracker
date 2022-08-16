@@ -1,0 +1,14 @@
+.boss {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: beige;
+  border: solid 0.1rem black;
+  border-radius: 0.4rem;
+  margin: 0.4rem 0;
+  padding: 0.2rem 0;
+}
+
+.boss_name, .boss_location {
+  text-align: center;
+}

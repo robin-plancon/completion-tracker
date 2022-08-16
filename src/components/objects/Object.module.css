@@ -1,0 +1,17 @@
+.object {
+  border: 0.1rem solid black;
+  border-radius: 0.4rem;
+  margin: 0.4rem 0;
+  padding: 0.2rem 0;
+  background-color: beige;
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.object__name,
+.object__location, 
+.object__details {
+  text-align: center;
+
+}
