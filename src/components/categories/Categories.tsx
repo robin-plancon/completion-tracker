@@ -4,6 +4,7 @@ import LoadingSpinner from "../Loader/LoadingSpinner";
 import classes from "./Categories.module.css";
 import CategoriesListItem from "./CategoriesList";
 import Category from "./Icategory";
+import NewCategory from "./NewCategory";
 
 const Categories = () => {
   const [loadedCategories, setLoadedCategories] = useState<Category[]>([]);
@@ -46,6 +47,7 @@ const Categories = () => {
           <p>No Categories found!</p>
         )}
       </div>
+      <NewCategory />
       <div className={classes.categories}>
         {!isLoading &&
           loadedCategories.length > 0 &&

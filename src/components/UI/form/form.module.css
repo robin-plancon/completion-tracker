@@ -1,0 +1,32 @@
+.form {
+  margin: 1rem auto;
+}
+
+.form_label {
+  margin: 0 0.4rem;
+}
+
+.form_input {
+  background-color: aliceblue;
+}
+
+.is_invalid {
+  outline-color: red;
+}
+
+.submit-button {
+  margin: 0 1rem;
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+  border: solid 1px black;
+  background-color: rgb(224, 173, 21);
+  color: black;
+  font-weight: 600;
+  box-shadow: none;
+}
+
+.submit-button:hover,
+.submit-button:active {
+  background-color: rgb(149, 94, 0);
+  box-shadow: 0.2rem 0.1rem rgba(0, 0, 0, 0.315);
+}

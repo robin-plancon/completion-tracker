@@ -4,6 +4,7 @@ import BossItem from "./Boss";
 import Boss from "./Iboss";
 
 import classes from "./Bosses.module.css";
+import NewBoss from "./NewBoss";
 
 const BossesItem: React.FC = () => {
   const [loadedBosses, setLoadedBosses] = useState<Boss[]>([]);
@@ -43,6 +44,7 @@ const BossesItem: React.FC = () => {
           </div>
         )}
       </div>
+      <NewBoss />
       <div className={classes.bosses}>
         <div className={classes.bosses__label_name}>Name</div>
         <div className={classes.bosses__label_location}>Location</div>

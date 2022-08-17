@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import LoadingSpinner from "../Loader/LoadingSpinner";
 import Quest from "./Iquest";
+import NewQuest from "./NewQuest";
 import QuestItem from "./Quest";
 
 import classes from "./Quests.module.css";
@@ -43,9 +44,10 @@ const Quests = () => {
           </div>
         )}
         {!isLoading && loadedQuests.length === 0 && (
-          <p>No Categories found!</p>
+          <p>No Quest found!</p>
         )}
       </div>
+      <NewQuest />
       <div className={classes.quests}>
           {!isLoading && loadedQuests.length > 0 && loadedQuests.map((quest) => {
             return <QuestItem key={quest._id} quest={quest} />

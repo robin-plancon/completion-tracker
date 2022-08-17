@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import DownArrow from "../icons/DownArrow";
-import RightArrow from "../icons/RightArrow";
+import DownArrow from "../UI/icons/DownArrow";
+import RightArrow from "../UI/icons/RightArrow";
 import Object from "../objects/Iobject";
 import ObjectsListItem from "../objects/ObjectsList";
 

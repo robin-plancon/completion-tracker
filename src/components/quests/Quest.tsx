@@ -1,6 +1,7 @@
 import React, { MouseEvent, useState } from "react";
-import DownArrow from "../icons/DownArrow";
-import RightArrow from "../icons/RightArrow";
+import DownArrow from "../UI/icons/DownArrow";
+import RightArrow from "../UI/icons/RightArrow";
+import NewStep from "./NewStep";
 
 import classes from "./Quest.module.css";
 import StepItem from "./Step";
@@ -66,6 +67,7 @@ const QuestItem: React.FC<QuestItemProps> = (props) => {
             )}
           </div>
         )}
+        {isExpanded && <NewStep />}
         {isExpanded &&
           steps.length > 0 &&
           steps.map((step) => {
