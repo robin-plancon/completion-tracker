@@ -47,7 +47,7 @@ const Categories = () => {
           <p>No Categories found!</p>
         )}
       </div>
-      <NewCategory />
+      <NewCategory loadedCategories={loadedCategories} setLoadedCategories={setLoadedCategories} />
       <div className={classes.categories}>
         {!isLoading &&
           loadedCategories.length > 0 &&

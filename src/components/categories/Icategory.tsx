@@ -1,5 +1,5 @@
 interface Category {
-  _id: string;
+  _id?: string;
   name: string;
   link?: string;
   parent?: string;

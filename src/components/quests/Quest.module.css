@@ -23,9 +23,25 @@
 }
 
 .icon {
-  margin: auto 2rem auto 0;
+  margin: auto 0;
   display: flex;
   justify-content: center;
-  width: 2rem;
+  align-items: center;
+  width: 4rem;
   height: 2rem;
+  background-color: rgb(224, 173, 21);
+  border-radius: 0.2rem;
+}
+
+.icon:hover,
+.icon:active {
+  cursor: pointer;
+  background-color: rgb(149, 94, 0);
+}
+
+.step_label {
+  width: 98%;
+  margin: 0.4rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

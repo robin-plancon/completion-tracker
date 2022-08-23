@@ -1,5 +1,7 @@
 .form {
   margin: 1rem auto;
+  display: inline-flex;
+  align-items: center;
 }
 
 .form_label {
@@ -18,15 +20,15 @@
   margin: 0 1rem;
   padding: 0.4rem 1rem;
   border-radius: 0.4rem;
-  border: solid 1px black;
-  background-color: rgb(224, 173, 21);
-  color: black;
+  border: none;
+  background-color: rgb(36, 18, 240);
+  color: white;
   font-weight: 600;
   box-shadow: none;
 }
 
 .submit-button:hover,
 .submit-button:active {
-  background-color: rgb(149, 94, 0);
-  box-shadow: 0.2rem 0.1rem rgba(0, 0, 0, 0.315);
+  background-color: rgb(36, 18, 160);
+  cursor: pointer;
 }

@@ -6,11 +6,10 @@ import classes from "./CategoriesList.module.css";
 
 interface CategoryItemProps {
   category: {
-    _id: string;
+    _id?: string;
     name: string;
     link?: string;
     parent?: string;
-    parents?: {}[];
   };
 }
 

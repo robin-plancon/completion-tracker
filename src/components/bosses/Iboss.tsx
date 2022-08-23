@@ -1,10 +1,10 @@
 interface Boss {
-  _id: string;
+  _id?: string;
   name: string;
   link?: string;
-  status: boolean;
+  status?: boolean;
   location: string;
-  id: string;
+  id?: string;
 }
 
 export default Boss;

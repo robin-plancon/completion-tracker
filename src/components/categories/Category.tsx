@@ -8,11 +8,10 @@ import classes from "./Category.module.css";
 
 interface CategoryItemProps {
   category: {
-    _id: string;
+    _id?: string;
     name: string;
     link?: string;
     parent?: string;
-    parents?: {}[];
     }
     isExpanded?: boolean
     haveChilds?: boolean

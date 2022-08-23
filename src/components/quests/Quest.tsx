@@ -8,10 +8,10 @@ import StepItem from "./Step";
 
 interface QuestItemProps {
   quest: {
-    _id: string;
+    _id?: string;
     name: string;
     link?: string;
-    status: boolean;
+    status?: boolean;
     steps: {
       _id: string;
       text: string;
@@ -34,19 +34,19 @@ const QuestItem: React.FC<QuestItemProps> = (props) => {
 
   return (
     <React.Fragment>
-      <div className={classes.quest} onClick={expandHandler}>
+      <div className={classes.quest}>
         {!props.quest.link && (
           <div className={classes.title}>
             <div className={classes["quest__name"]}>
               <a href={props.quest.link}>{props.quest.name}</a>
             </div>
             {!isExpanded && (
-              <div className={classes.icon}>
+              <div className={classes.icon} onClick={expandHandler}>
                 <RightArrow />
               </div>
             )}
             {isExpanded && (
-              <div className={classes.icon}>
+              <div className={classes.icon} onClick={expandHandler}>
                 <DownArrow />
               </div>
             )}
@@ -68,10 +68,18 @@ const QuestItem: React.FC<QuestItemProps> = (props) => {
           </div>
         )}
         {isExpanded && <NewStep />}
+        {isExpanded && (
+          <div className={classes["step_label"]}>
+            <div className={classes["step_label__position"]}>Order</div>
+            <div className={classes["step_label__text"]}>
+              Step description
+            </div>
+          </div>
+        )}
         {isExpanded &&
           steps.length > 0 &&
-          steps.map((step) => {
-            return <StepItem key={step._id} step={step} />;
+          steps.map((step, index) => {
+            return <StepItem position={index + 1} key={step._id} step={step} />;
           })}
       </div>
     </React.Fragment>

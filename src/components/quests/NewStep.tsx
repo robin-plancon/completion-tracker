@@ -12,7 +12,7 @@ interface SubmittableStep {
 
 const stepValidationSchema = Yup.object().shape({
   text: Yup.string().required("Step description is required."),
-  link: Yup.string().url("Url is invalid."),
+  link: Yup.string().url("Url is invalid.")
 });
 
 const NewStep = () => {
@@ -27,13 +27,14 @@ const NewStep = () => {
   return (
     <React.Fragment>
       <form className={classes.form} onSubmit={handleSubmit(onSubmit)}>
-        <label className={classes["form_label"]}>Name:</label>
-        <input
+        <label className={classes["form_label"]}>Step description:</label>
+        <textarea
           {...register("text", { required: true })}
           placeholder="required"
           className={`${classes["form_input"]} ${
             errors.text ? classes["is_invalid"] : ""
           }`}
+          rows={3}
         />
 
         <label className={classes["form_label"]}>Link :</label>

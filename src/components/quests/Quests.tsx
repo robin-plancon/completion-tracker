@@ -47,7 +47,7 @@ const Quests = () => {
           <p>No Quest found!</p>
         )}
       </div>
-      <NewQuest />
+      <NewQuest loadedQuests={loadedQuests} setLoadedQuests={setLoadedQuests} />
       <div className={classes.quests}>
           {!isLoading && loadedQuests.length > 0 && loadedQuests.map((quest) => {
             return <QuestItem key={quest._id} quest={quest} />

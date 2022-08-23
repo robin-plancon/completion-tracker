@@ -4,12 +4,12 @@ import classes from "./Boss.module.css";
 
 interface BossItemProps {
   boss: {
-    _id: string;
+    _id?: string;
     name: string;
     link?: string;
-    status: boolean;
+    status?: boolean;
     location: string;
-    id: string;
+    id?: string;
   };
 }
 
@@ -17,7 +17,7 @@ const BossItem: React.FC<BossItemProps> = (props) => {
 
   return (
     <div className={classes.boss}>
-      { props.boss.link && <div className={classes.boss_name}><a href={props.boss.link}>{props.boss.name}</a></div>}
+      { props.boss.link && <div className={classes.boss_name}><a href={props.boss.link} target="_blank" rel="noreferrer">{props.boss.name}</a></div>}
       { !props.boss.link && <div className={classes.boss_name}>{props.boss.name}</div>}
       <div className={classes.boss_location}>{props.boss.location}</div>
     </div>

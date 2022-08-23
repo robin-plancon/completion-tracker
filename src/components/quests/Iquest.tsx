@@ -1,8 +1,8 @@
 interface Quest {
-  _id: string;
+  _id?: string;
   name: string;
   link?: string;
-  status: boolean;
+  status?: boolean;
   steps: [
     {
       _id: string;

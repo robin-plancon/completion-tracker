@@ -44,7 +44,7 @@ const BossesItem: React.FC = () => {
           </div>
         )}
       </div>
-      <NewBoss />
+      <NewBoss loadedBosses={loadedBosses} setLoadedBosses={setLoadedBosses} />
       <div className={classes.bosses}>
         <div className={classes.bosses__label_name}>Name</div>
         <div className={classes.bosses__label_location}>Location</div>
