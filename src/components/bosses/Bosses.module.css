@@ -12,5 +12,5 @@
   width: 95%;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 2rem;
 }

@@ -50,7 +50,7 @@ const BossesItem: React.FC = () => {
         <div className={classes.bosses__label_location}>Location</div>
         {!isLoading && loadedBosses.length > 0 && (
             loadedBosses.map((boss) => {
-              return <BossItem key={boss._id} boss={boss} />;
+              return <BossItem key={boss._id} boss={boss} loadedBosses={loadedBosses} setLoadedBosses={setLoadedBosses} />;
             })
         )}
       </div>

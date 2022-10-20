@@ -1,5 +1,5 @@
 interface Boss {
-  _id?: string;
+  _id: string;
   name: string;
   link?: string;
   status?: boolean;
